@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>webIM</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div id="fb-root"></div>
+<div id='login' style='text-align: center'>
+    <form name='cred'>
+        <label for='jid'>JID:</label>
+        <input type='text' id='jid' value="">
+        <label for='pass'>Password:</label>
+        <input type='password' id='pass' value="">
+        <input type='button' id='connect' value='connect'>
+    </form>
+
+    <label for='to'>
+        to:
+    </label>
+    <input type='text' id='to'>
+    <label for='message'>
+        message:
+    </label>
+    <input type='text' id='message'>
+    <input type='button' id='send' value='send'>
+
+</div>
+<hr>
+<ul id='log'></ul>
+<script src='js/jquery.min.js'></script>
+<script src='js/strophe.min.js'></script>
+<script src="js/index.js"></script>
+</body>
+</html>
